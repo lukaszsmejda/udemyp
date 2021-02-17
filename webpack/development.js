@@ -4,7 +4,7 @@ module.exports = {
         port: 3000,
     },
 
-    devtool: 'inline-source-map ',
+    devtool: 'eval-cheap-module-source-map',
     module: {
         rules: [
             {
@@ -31,7 +31,7 @@ module.exports = {
             {
                 test: /\.(s(a|c)ss|css)$/,
                 exclude: /\.module.(s(a|c)ss)$/,
-                loader: [
+                use: [
                     'style-loader',
                     'css-loader',
 
