@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import bemCssModules from 'bem-css-modules';
-import Course from './subcomponents/Course'
+import Course from '../Course/Course'
 import { default as ContentStyles } from './Courses.module.scss'
 import { StoreContext } from '../../store/StoreProvider';
 
