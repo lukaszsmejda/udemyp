@@ -41,11 +41,11 @@ const Course = ({ authors, id, img, isUserContext, price, title }) => {
     return (
         <li>
             <article className={style()}>
-                <h3 className={style('title')}></h3>
+                <h3 className={style('title')}>{title}</h3>
                 <img src={img} alt="title" className={style('image')} />
                 <p className={style('price')}>{`Koszt kursu: ${price} zlotych `}</p>
                 <p className={style('authours')}>{`Autorzy: ${allAuthors}`}</p>
-                <p className={style()}>{`${title}`}</p>
+
                 {shouldBuyButtonBeVisible && <button onClick={handleOnClick}>Buy</button>}
             </article>
         </li>
